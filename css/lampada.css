@@ -1,0 +1,123 @@
+*{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    color:aliceblue;
+}
+img{
+    width: 50%;
+    border: 1px solid black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.column{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+
+}
+.controlador{
+    background-color: aliceblue;
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid aliceblue;
+    
+}
+.onoff{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.controle{
+    
+    display: flex;
+    width: 70%;
+    height: 70%;    
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+
+    
+}
+tr, td{
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+    background-color: aliceblue;
+}
+.cor{
+    width: 100%;
+    height: 100%;
+}
+
+.ligardesligar{
+    text-align: center;
+    padding-top: 2px;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#amarelo{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(255, 240, 23);
+}
+#azul{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(38, 96, 255);
+}
+#laranja{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(255, 154, 23);
+}
+#rosa{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(255, 23, 224);
+}
+#verde{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(23, 255, 35);
+}
+#vermelho{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+    background-color: rgb(255, 23, 23);
+}
+#off{
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(145, 145, 145);
+}
