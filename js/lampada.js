@@ -1,101 +1,80 @@
-var amarelo = document.getElementById("amarelo")
-var azul = document.getElementById("azul")
-var laranja = document.getElementById("laranja")
-var rosa = document.getElementById("rosa")
-var verde = document.getElementById("verde")
-var vermelho = document.getElementById("vermelho")
-var liga = document.getElementById("off")
-const i = document.getElementById("lampada")
-const onoff = document.getElementById("imgoff")
+//lampada
+var imgLampada = document.querySelector('#lampada')
 
-/*
-function ligarDesliga(){
+//botao de ligar
+const btnLD = document.querySelector('#btnLD')
+var imgLDFonte = document.querySelector('#imgBotao').src
+const imgLigado = "./img/on.png"
+const imgDesligado = "./img/off.png"
 
-    var imagem = document.getElementById('imgoff').src;
-    var imagem_ligado = './img/on.png';
-    var imagem_desligado = './img/onoff.png';
-    
-    if(imagem == imagem_ligado){
-    	document.getElementById('imgoff').src = imagem_desligado;
-    }else {
-    	document.getElementById('imgoff').src = imagem_ligado;
+//botoes de cores
+const btnAmarelo = document.getElementById("amarelo")
+const btnAzul = document.getElementById("azul")
+const btnLaranja = document.getElementById("laranja")
+const brnRosa = document.getElementById("rosa")
+const btnVerde = document.getElementById("verde")
+const btnVermelho = document.getElementById("vermelho")
 
-*/
-var atual_state = 'DESLIGADA';
+ function mudarAmarelo(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-amarelo.png'
+     }
+ }
 
-function mudaEstado() {
-    atual_state === 'DESLIGADA' ? atual_state = 'LIGADA' : atual_state = 'DESLIGADA';
-    return atual_state;
-}
+ function mudarAzul(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-azul.png'
+     }
+ }
+ function mudarLaranja(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-laranja.png'
+     }
+ }
+ function mudarRosa(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-rosa.png'
+     }
+ }
+ function mudarVerde(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-verde.png'
+     }
+ }
+ function mudarVermelho(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+     
+     if(imgLDFonte.includes("on")){
+        document.querySelector('#lampada').src = './img/lampada-vermelho.png'
+     }
+ }
 
-function ligaDesliga() {
 
-    if (atual_state === 'DESLIGADA'){
-        document.getElementById('imgoff').src = './img/on.png';
-        amarelo.addEventListener('click',()=>{
-            botao = 1
-            i.src = "./img/lampada-amarela.png";
-        })
-        azul.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-azul.png"
-        })
-        laranja.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-laranja.png"
-        })
-        rosa.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-rosa.png"
-        })
-        verde.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-verda.png"
-        })
-        vermelho.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-vermelha.png"
-        })
+//inferno
+function mudarImagem(){
+    imgLDFonte = document.querySelector('#imgBotao').src
+    imgLampada = document.querySelector('#lampada')
+
+    if(imgLDFonte.includes("off")){
+        document.getElementById("imgBotao").src = imgLigado
+    } else {
+        document.querySelector('#lampada').src = './img/lampada-desligada.png'
+        document.getElementById("imgBotao").src = imgDesligado
     }
-    else{
-        document.getElementById('imgoff').src = './img/onoff.png';
-
-    }
-    mudaEstado();
-    
-
 }
-
-liga.addEventListener("click", ligaDesliga)
-
-        amarelo.addEventListener('click',()=>{
-            botao = 1
-            i.src = "./img/lampada-amarela.png";
-        })
-        azul.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-azul.png"
-        })
-        laranja.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-laranja.png"
-        })
-        rosa.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-rosa.png"
-        })
-        verde.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-verda.png"
-        })
-        vermelho.addEventListener('click', ()=>{
-            botao = 1
-            i.src = "./img/lampada-vermelha.png"
-        })
-
-    
-
-
-
-
-

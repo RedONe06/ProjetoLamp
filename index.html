@@ -17,25 +17,26 @@
             </header>
         </div>
         <div class="row">
-            <img src="./img/lampada desligada.png" alt="lâmpada desligada" id="lampada">
+            <img src="./img/lampada-desligada.png" id="lampada">
             <div class="controlador">
                 <div class="onoff">
-                    <div id="on"><button id="off" class="ligardesligar"><img src="./img/onoff.png" alt="off" id="imgoff"></button></div>
-                    
+                    <div id="superior">
+                        <button id="btnLD" onclick="mudarImagem()"><img src="./img/off.png" id="imgBotao"></button>
+                    </div>
                 </div>
                 <div class="controle">
                     <table>
                         <tr>
-                            <td><button id="amarelo" class="cor"></button></td>
-                            <td><button id="azul" class="cor"></button></td>
+                            <td><button id="amarelo" class="cor" onclick="mudarAmarelo()"></button></td>
+                            <td><button id="azul" class="cor" onclick="mudarAzul()"></button></td>
                         </tr>
                         <tr>
-                            <td><button id="laranja" class="cor"></button></td>
-                            <td><button id="rosa" class="cor"></button></td>
+                            <td><button id="laranja" class="cor" onclick="mudarLaranja()"></button></td>
+                            <td><button id="rosa" class="cor" onclick="mudarRosa()"></button></td>
                         </tr>
                         <tr>
-                            <td><button id="verde" class="cor"></button></td>
-                            <td><button id="vermelho" class="cor"></button></td>
+                            <td><button id="verde" class="cor" onclick="mudarVerde()"></button></td>
+                            <td><button id="vermelho" class="cor" onclick="mudarVermelho()"></button></td>
                         </tr>
                     </table>
                 </div>
